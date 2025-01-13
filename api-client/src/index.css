@@ -1,0 +1,193 @@
+/* Resetando margens e espaçamentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais para o body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f1f1;
+  color: #444;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo para o código em destaque */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f7f7f7;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #d9534f;
+  font-size: 1.1em;
+  word-wrap: break-word;
+}
+
+/* Estilo de títulos */
+h1, h2, h3 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #222;
+}
+
+h2 {
+  font-size: 2.2em;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.8em;
+  color: #444;
+}
+
+/* Layout da página */
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para seções */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Listas sem marcadores */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 12px 18px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+  background-color: #f4f4f4;
+  transform: scale(1.03);
+}
+
+li button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li button:first-of-type {
+  background-color: #5bc0de;
+  color: white;
+}
+
+li button:first-of-type:hover {
+  background-color: #31b0d5;
+  transform: translateY(-2px);
+}
+
+li button:last-of-type {
+  background-color: #d9534f;
+  color: white;
+}
+
+li button:last-of-type:hover {
+  background-color: #c9302c;
+  transform: translateY(-2px);
+}
+
+/* Estilo dos campos de entrada */
+input, select {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Estilo dos botões principais */
+button {
+  background-color: #000000;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Formulários e campos de seleção */
+form {
+  margin-top: 20px;
+}
+
+.select-user {
+  margin-top: 12px;
+}
+
+.editing {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  input, select, button {
+    padding: 10px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

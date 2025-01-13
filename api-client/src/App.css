@@ -1,0 +1,199 @@
+/* Resetando margens e espaçamentos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa; /* Cor de fundo mais suave */
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centralizando verticalmente */
+  height: 100vh; /* Garantindo que ocupe toda a altura da tela */
+  transition: background-color 0.3s ease;
+  flex-wrap: wrap; /* Permitindo que os itens se ajustem */
+}
+
+/* Ajuste para títulos principais */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Contêiner principal com largura responsiva */
+.container {
+  width: 100%;
+  max-width: 600px; /* Limite de largura para não ficar muito grande */
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para seções */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  background-color: #f9f9f9;
+}
+
+/* Estilos de lista sem marcadores */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo dos itens da lista */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 8px 12px; /* Menor padding para ficar mais compacto */
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+}
+
+/* Estilo dos botões dentro da lista */
+li button {
+  padding: 6px 10px; /* Botões menores */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li button:first-of-type {
+  background-color: #000000;
+  color: #fff;
+}
+
+
+
+li button:last-of-type {
+  background-color: #000000;
+  color: #fff;
+}
+
+
+/* Estilos para campos de entrada e seleção (menores) */
+input, select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px; /* Menor padding */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Estilo dos botões principais (menores) */
+button {
+  background-color: #000000;
+  color: #fff;
+  padding: 8px 14px; /* Menor padding para o botão */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Estilo de formulários */
+form {
+  margin-top: 20px;
+}
+
+/* Estilo de campos de seleção de usuários */
+.select-user {
+  margin-top: 10px;
+}
+
+/* Estilo para o estado de edição */
+.editing {
+  background-color: #fffbcc;
+  border: 1px solid #ffe066;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .container {
+    width: 90%; /* Ajusta o contêiner para 90% da largura da tela em telas pequenas */
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  input, select, button {
+    padding: 8px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  input, select, button {
+    padding: 8px;
+  }
+}
